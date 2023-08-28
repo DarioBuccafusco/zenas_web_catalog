@@ -15,4 +15,7 @@ my_catalog = my_cur.fetchall()
 df = pandas.DataFrame(my_catalog)
 
 #write dataframe to the page
-streamlit.write(df)
+#streamlit.write(df)
+
+color_list = df[0].values.tolist()
+print(color_list)
